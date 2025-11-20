@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorial-mod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "A mod I made to learn Minecraft fabric modding!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Gameboyyy001/fabric-tutorial-1.21.X"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorial-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.gameboyyy001.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.gameboyyy001.tutorialmod.TutorialModDataGenerator"
+		],
+        "client": [
+            "net.gameboyyy001.tutorialmod.TutorialModClient"
+        ]
+	},
+	"mixins": [
+		"tutorial-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
