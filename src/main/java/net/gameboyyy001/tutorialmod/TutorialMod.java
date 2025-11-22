@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.gameboyyy001.tutorialmod.block.ModBlocks;
 import net.gameboyyy001.tutorialmod.item.ModItems;
+import net.gameboyyy001.tutorialmod.item_groups.ModItemGroups;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,5 +16,6 @@ public class TutorialMod implements ModInitializer {
 	public void onInitialize() {
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
+        ModItemGroups.registerItemGroups();
     }
 }
